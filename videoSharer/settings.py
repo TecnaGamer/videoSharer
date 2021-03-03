@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['tecnagamer.pythonanywhere.com','127.0.0.1','localhost','35.172
 
 INSTALLED_APPS = [
     'videos',
+    'crispy_forms',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -125,5 +126,4 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-#Activate Django-Heroku.
-#django_heroku.settings(locals())
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
